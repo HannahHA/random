@@ -12,6 +12,8 @@ makeCircle(153,75,6,"red", 100, 1)
 makeEllipse(100,15,25,5,"black", 1)
 makeEllipse(100,10,20,5,"black" , 1)
 makeEllipse(100,5,15, 5, "black" ,1)
+makeRect(85,45,20,155,"black", 1)
+
 }
 
 
