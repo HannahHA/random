@@ -5,7 +5,13 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    
+     makeRect(40, 15,125,80,"#6E2C00", 1) 
+  makeImage("http://data.whicdn.com/images/6220757/large.gif", 40, 30, 120, 60, 1 ) 
+makeCircle(153,75,6,"red", 100, 1)
+ makeCircle(153, 45, 6 , "green", 1) 
+makeEllipse(100,15,25,5,"black", 1)
+makeEllipse(100,10,20,5,"black" , 1)
+makeEllipse(100,5,15, 5, "black" ,1)
 }
 
 
@@ -13,7 +19,12 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    
+  
+
+
+
+
+
 }
 
 
@@ -22,6 +33,11 @@ function createSecondScene() {
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
     
+
+  
+  
+  
+  
 }
 
 
@@ -32,8 +48,16 @@ function createThirdScene() {
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
-    
-    // If the number is less than 0.33, call the function to create your first scene.
+   var random = Math.random()
+   if(random < 0.33) { 
+      createFirstScene()
+   }else if(random< 0.67){  
+      createSecondScene() 
+         }else{
+             createThirdScene
+         }
+
+             // If the number is less than 0.33, call the function to create your first scene.
     
     
     
